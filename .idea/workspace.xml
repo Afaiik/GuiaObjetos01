@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38cec3cb-03c0-4d6c-a5fe-cc2e25f92fed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/Consigna1/Figura.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Consigna1/Rectangulo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GuiaObjetos01/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GuiaObjetos01/com/company/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -9,17 +13,38 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZS5t7H9UHMqeUfCZyyVT4oQnw7" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.company" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\03 - UTN Segundo Año\GuiaObjetos01\src\com\company" />
+      <recent name="D:\03 - UTN Segundo Año\GuiaObjetos01\Consigna1" />
+      <recent name="D:\03 - UTN Segundo Año\GuiaObjetos01" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -63,10 +88,49 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="536" y="220" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584839470811">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="536" y="220" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1584839470811" />
+    <state x="538" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1584839071282">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="538" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1584839071282" />
+    <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584839795124">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1584839795124" />
+    <state x="424" y="11" key="CommitChangelistDialog2" timestamp="1584839973853">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="424" y="11" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1584839973853" />
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1584841153741">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1584841153741" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1584841153741">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1584841153741" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1584841153741">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1584841153741" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1584841153741">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1584841153741" />
     <state x="465" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1584820481913">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="465" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1584820481913" />
+    <state x="209" y="37" key="new project wizard" timestamp="1584838717206">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="209" y="37" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1584838717206" />
   </component>
 </project>
