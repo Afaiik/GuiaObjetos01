@@ -2,6 +2,9 @@ package com.company;
 
 import com.company.Consigna1.Rectangulo;
 import com.company.Consigna2.Empleado;
+import com.company.Consigna3.Producto;
+import com.company.Consigna4.CuentaBancaria;
+import com.company.Consigna5.Hora;
 
 public class Main {
 
@@ -36,6 +39,50 @@ public class Main {
         d. Aumente el salario del empleado Carlos en un 15% e imprima en pantalla el  salario anual del mismo. 
         */
         Consigna2();
+
+        /*
+        Modele el objeto Ítem de Venta con las siguientes propiedades,
+        identificador,  descripción, cantidad y precio unitario.
+        Cree los métodos para calcular el precio  total
+        teniendo en cuenta el precio unitario y cantidad.
+        Un método que permita  imprimir por pantalla los atributos del objeto de la siguiente forma: 
+        ItemVenta[id=?, descripción=?, cantidad=?, pUnitario=?, pTotal=?] 
+        a. Inicialice el objeto con los atributos necesarios 
+        b. Imprima por pantalla el objeto inicializado.
+        */
+        Consigna3();
+
+        /*Modele el objeto que representa la cuenta de un banco,
+        con identificador, nombre  y balance.
+        Considere los getters, setters y constructores necesarios.
+        Tenga en  cuenta los siguientes métodos. 
+        a. El método crédito que representa un depósito de dinero en la cuenta.
+        Este  método debe devolver el balance luego de la operación. 
+        b. El método débito que representa una sustracción de dinero de la cuenta. 
+        Este método debe devolver el balance luego de la operación.
+        Si el dinero en  la cuenta no es suficiente para cubrir la sustracción,
+        se debe imprimir por  pantalla un aviso.  
+        c. Un método que imprima por pantalla las características del objeto. 
+        Realice las siguientes operaciones: 
+        1. Inicialice una cuenta con un monto inicial de 15000. 
+        2. Realice una operación de crédito de 2500. 
+        3. Realice una operación de compra de 1500. 
+        4. Realice una operación de compra de 30000. 
+        5. Imprima por pantalla los valores de la cuenta y verifique que el balance sea  correcto. */
+        Consigna4();
+
+        /*
+         5. Modele el objeto Hora, teniendo en cuenta sus atributos, hora, minuto y segundo. 
+         Tenga en cuenta el rango de valores aceptados para cada uno de estos. 
+         a. Hora: 0 … 23  b. Minuto: 0 … 59  c. Segundo: 0 … 59 
+         Considere el siguiente comportamiento: 
+         1. Un método que imprima la hora bajo el siguiente formato ​hh:mm:ss 
+         usando zero a la izquierda ejemplo 13:04:22 . 
+         2. Un método que avance en 1 segundo y devuelva la instancia del objeto. 
+         3. Un método que retroceda en 1 segundo y devuelva la instancia del objeto. 
+         4. Instanciar el objeto y probar los métodos creados. 
+         */
+        Consigna5();
 
     }
 
@@ -74,4 +121,49 @@ public class Main {
         System.out.println();
     }
 
+    private static void Consigna3(){
+        System.out.println("-------- Consigna 3 --------\n");
+
+        //a. Inicialice el objeto con los atributos necesarios 
+        Producto primerProducto = new Producto(1, "Alcohol en Gel", 3, 500);
+        // b. Imprima por pantalla el objeto inicializado.
+        System.out.println(primerProducto.toString());;
+        System.out.println();
+    }
+
+    private static void Consigna4(){
+        System.out.println("-------- Consigna 4 --------\n");
+
+        //1. Inicialice una cuenta con un monto inicial de 15000. 
+        CuentaBancaria cuenta = new CuentaBancaria(1, "Cuenta de Juan Perez", 15000);
+        //2. Realice una operación de crédito de 2500. 
+        System.out.println("Se realiza Acreditación, Balance actual: " + cuenta.Acreditar(2500));
+        //3. Realice una operación de compra de 1500. 
+        System.out.println("Se realiza Debito, Balance actual: " + cuenta.Debitar(1500));
+        //4. Realice una operación de compra de 30000. 
+        System.out.println("Se realiza Debito, Balance actual: " + cuenta.Debitar(30000));
+        //5. Imprima por pantalla los valores de la cuenta y verifique que el balance sea  correcto.
+        System.out.println(cuenta.toString());
+        var message = cuenta.getBalance() == 15000+2500-1500 ? "Balance correcto :)" : "Balance INCORRECTO :(";
+        System.out.println(message);
+        System.out.println();
+    }
+
+    private static void Consigna5(){
+        System.out.println("-------- Consigna 5 --------\n");
+
+        //Instanciar el objeto y probar los métodos creados. 
+        Hora hora = new Hora();
+        //Probando constructor por defecto:
+        System.out.println("La hora actual es " + hora.toString());
+
+        Hora otraHora = new Hora(1,5,12);
+        System.out.println("La otra hora que cree es: " +otraHora.toString());
+
+        try{
+            Hora horaIncorrecta = new Hora(70,50,100);
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }
+    }
 }
